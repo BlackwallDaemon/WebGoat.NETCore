@@ -10,7 +10,7 @@ using WebGoatCore.ViewModels;
 namespace WebGoatCore.Controllers
 {
     [Route("[controller]/[action]")]
-    [ValidateAntiForgeryToken]
+    [AutoValidateAntiforgeryToken]
     public class ProductController : Controller
     {
         private readonly ProductRepository _productRepository;
